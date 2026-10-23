@@ -3,7 +3,6 @@ package app.neteaseja.patches.shared
 import app.morphe.patcher.patch.ApkFileType
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
-import app.morphe.patcher.patch.SupportedAbi
 
 object Constants {
     val COMPATIBILITY_NETEASE = Compatibility(
@@ -14,12 +13,10 @@ object Constants {
         appIconColor = 0xE60012,
         targets = listOf(
             // Exact version this patch set was developed and verified against.
+            // No versionCode pin: the patches are ABI-independent
+            // (resource names are resolved by name at patch time).
             AppTarget(
-                version = "9.6.13",
-                versionCodes = mapOf(
-                    // Official 64-bit build from music.163.com.
-                    SupportedAbi.ARM64_V8A to 9006013
-                )
+                version = "9.6.13"
             ),
             // Best effort for newer versions: resource names are looked up
             // by name at patch time, so untouched strings keep working.
