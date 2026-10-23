@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-23T09:03:03",
-  "description": "## [1.0.1](https://github.com/sas-news/netease-ja/compare/v1.0.0...v1.0.1) (2026-10-23)\n\n### 🐛 Bug Fixes\n\n* create values-ja directory before writing strings overlay ([41754e1](https://github.com/sas-news/netease-ja/commit/41754e1dd6558a6e445219decaa88f51283a6826))",
-  "download_url": "https://github.com/sas-news/netease-ja/releases/download/v1.0.1/patches-1.0.1.mpp",
+  "created_at": "2026-10-23T09:12:42",
+  "description": "## [1.0.2](https://github.com/sas-news/netease-ja/compare/v1.0.1...v1.0.2) (2026-10-23)\n\n### 🐛 Bug Fixes\n\n* drop ABI version-code pin, patches are ABI-independent ([a5f5f8b](https://github.com/sas-news/netease-ja/commit/a5f5f8b383497a854da4cb6f79a985189fadfd8a))",
+  "download_url": "https://github.com/sas-news/netease-ja/releases/download/v1.0.2/patches-1.0.2.mpp",
   "signature_download_url": "",
-  "version": "1.0.1"
+  "version": "1.0.2"
 }

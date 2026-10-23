@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/sas-news/netease-ja/compare/v1.0.1...v1.0.2) (2026-10-23)
+
+### 🐛 Bug Fixes
+
+* drop ABI version-code pin, patches are ABI-independent ([a5f5f8b](https://github.com/sas-news/netease-ja/commit/a5f5f8b383497a854da4cb6f79a985189fadfd8a))
+
 ## [1.0.1](https://github.com/sas-news/netease-ja/compare/v1.0.0...v1.0.1) (2026-10-23)
 
 ### 🐛 Bug Fixes
