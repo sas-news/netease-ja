@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/sas-news/netease-ja/compare/v1.1.1...v1.1.2) (2026-10-23)
+
+### 🐛 Bug Fixes
+
+* compile stub API jar for Java 8 bytecode ([0631fb9](https://github.com/sas-news/netease-ja/commit/0631fb9c88d7c77e318b611c534f9261fd465b59))
+
 ## [1.1.1](https://github.com/sas-news/netease-ja/compare/v1.1.0...v1.1.1) (2026-10-23)
 
 ### 🐛 Bug Fixes

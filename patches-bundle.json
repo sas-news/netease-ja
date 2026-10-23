@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-23T12:27:57",
-  "description": "## [1.1.1](https://github.com/sas-news/netease-ja/compare/v1.1.0...v1.1.1) (2026-10-23)\n\n### 🐛 Bug Fixes\n\n* vendor compile-only Xposed API stubs (not on Maven Central) ([4c51efc](https://github.com/sas-news/netease-ja/commit/4c51efc0106da3df683f134727439c98cdc47fde))",
-  "download_url": "https://github.com/sas-news/netease-ja/releases/download/v1.1.1/patches-1.1.1.mpp",
+  "created_at": "2026-10-23T12:36:53",
+  "description": "## [1.1.2](https://github.com/sas-news/netease-ja/compare/v1.1.1...v1.1.2) (2026-10-23)\n\n### 🐛 Bug Fixes\n\n* compile stub API jar for Java 8 bytecode ([0631fb9](https://github.com/sas-news/netease-ja/commit/0631fb9c88d7c77e318b611c534f9261fd465b59))",
+  "download_url": "https://github.com/sas-news/netease-ja/releases/download/v1.1.2/patches-1.1.2.mpp",
   "signature_download_url": "",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }
