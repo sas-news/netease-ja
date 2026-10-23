@@ -5,6 +5,22 @@
 ## パッチ
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0](https://github.com/sas-news/netease-ja/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+<details open>
+<summary>📦 网易云音乐&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 9.6.13 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [コメント翻訳 (Comment translate)](#comment-translate) | コメント画面や紹介画面に「訳」ボタンを追加し、表示中の中国語テキストを翻訳します。無料の匿名翻訳APIを使用するため文面が外部送信されます。 |  |
+| [日本語化 (Japanese UI)](#japanese-ui) | 主要なUI文字列を日本語（一部英語）で表示します。レイアウト崩れ防止のため短文中心の部分的翻訳です。 |  |
+
+</details>
 
 <!-- PATCHES_END -->
 
