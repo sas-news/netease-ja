@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/sas-news/netease-ja/compare/v1.0.2...v1.1.0) (2026-10-23)
+
+### ✨ New Features
+
+* LSPosed module for signature-safe Japanese UI + comment translate ([d1ebdd3](https://github.com/sas-news/netease-ja/commit/d1ebdd3278828d48049aa65d737070eacdce96e6))
+
 ## [1.0.2](https://github.com/sas-news/netease-ja/compare/v1.0.1...v1.0.2) (2026-10-23)
 
 ### 🐛 Bug Fixes
