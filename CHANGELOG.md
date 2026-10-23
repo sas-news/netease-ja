@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/sas-news/netease-ja/compare/v1.1.0...v1.1.1) (2026-10-23)
+
+### 🐛 Bug Fixes
+
+* vendor compile-only Xposed API stubs (not on Maven Central) ([4c51efc](https://github.com/sas-news/netease-ja/commit/4c51efc0106da3df683f134727439c98cdc47fde))
+
 ## [1.1.0](https://github.com/sas-news/netease-ja/compare/v1.0.2...v1.1.0) (2026-10-23)
 
 ### ✨ New Features

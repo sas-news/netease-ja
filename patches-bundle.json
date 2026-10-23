@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-23T11:29:13",
-  "description": "## [1.1.0](https://github.com/sas-news/netease-ja/compare/v1.0.2...v1.1.0) (2026-10-23)\n\n### ✨ New Features\n\n* LSPosed module for signature-safe Japanese UI + comment translate ([d1ebdd3](https://github.com/sas-news/netease-ja/commit/d1ebdd3278828d48049aa65d737070eacdce96e6))",
-  "download_url": "https://github.com/sas-news/netease-ja/releases/download/v1.1.0/patches-1.1.0.mpp",
+  "created_at": "2026-10-23T12:27:57",
+  "description": "## [1.1.1](https://github.com/sas-news/netease-ja/compare/v1.1.0...v1.1.1) (2026-10-23)\n\n### 🐛 Bug Fixes\n\n* vendor compile-only Xposed API stubs (not on Maven Central) ([4c51efc](https://github.com/sas-news/netease-ja/commit/4c51efc0106da3df683f134727439c98cdc47fde))",
+  "download_url": "https://github.com/sas-news/netease-ja/releases/download/v1.1.1/patches-1.1.1.mpp",
   "signature_download_url": "",
-  "version": "1.1.0"
+  "version": "1.1.1"
 }
