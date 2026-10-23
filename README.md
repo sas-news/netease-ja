@@ -29,24 +29,16 @@
 - **日本語化 (Japanese UI)**：`res/values-ja/strings.xml` を追加し、主要UI文字列だけを日本語（一部英語）表示にします。レイアウト崩れ防止のため短文中心の部分的翻訳で、未訳部分は自動的に既定（中国語）表示になります。
 - **コメント翻訳 (Comment translate)**：コメント画面・折りたたみ表示・アーティスト紹介・アルバム紹介・プレイリスト紹介にフローティングの「訳」ボタンを追加します。開いて約1秒で表示中の中国語テキスト（12文字以上）を自動翻訳し、タップで原文／訳文を切り替えます。無料の匿名翻訳APIを使うため文面が外部送信されます。既定OFF（オプトイン）。
 
-## 必要なもの
+## 使い方
 
-- 対象 APK（公式配布：`https://music.163.com/api/android/download/latest2`）
-- GitHub アカウント＋PAT（Morphe の Gradle プラグイン取得に必要）
-- Morphe Manager / Morphe Desktop
+- スマホの Morphe Manager：`https://morphe.software/add-source?github=sas-news/netease-ja` を開いてソース追加
+- PC の Morphe Desktop：[Releases](../../releases) から最新の `.mpp` と対象 APK（公式配布：`https://music.163.com/api/android/download/latest2`）を用意してパッチ
 
-## ビルド（2通り）
+## 開発（ビルドと更新）
 
-### A. GitHub Actions（推奨・手元不要）
+push するだけで Release が自動作成されます（`feat:`／`fix:` 付きコミットが対象）。初回のみ Settings → Secrets に `REGISTRY_PAT`（classic PAT、`read:packages`）を登録してください。以降の手作業は不要です。
 
-1. このリポジトリを clone（private のまま）
-2. Settings → Secrets に `REGISTRY_PAT` を登録（classic PAT、`read:packages` のみで可）
-3. Actions → build → Run workflow（または main/dev に push）
-4. Artifacts から `neteaseja-mpp` をダウンロード
-
-手元の Java / Gradle / Android SDK は不要です。初回の PAT 登録だけ必要です。
-
-### B. 手元ビルド
+手元で確認ビルドする場合：
 
 ```sh
 # tools/ で翻訳XMLを生成（初回・翻訳更新時）
@@ -65,9 +57,10 @@ python3 tools/build_values_ja.py analysis/ja_chunk*.json \
 2. 事前チェックを実行する（翻訳名・プレースホルダ・対象Activity・バージョン固定の検証）
 
 ```sh
-python3 ../tools/check_patch.py <new.apk>
+python3 tools/check_patch.py <new.apk>
 ```
-2. 翻訳を移行する（名前が変わった文字列は値一致で再割当＋要レビュー）
+
+3. 翻訳を移行する（名前が変わった文字列は値一致で再割当＋要レビュー）
 
 ```sh
 python3 tools/migrate_translations.py <new.apk> \
