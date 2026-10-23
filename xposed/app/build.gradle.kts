@@ -21,5 +21,8 @@ android {
 }
 
 dependencies {
-    compileOnly("de.robv.android.xposed:api:82")
+    // Classic Xposed API is not on Maven Central, so a minimal
+    // compile-only stub jar is vendored (runtime classes always come
+    // from the Xposed framework on device and are never bundled).
+    compileOnly(files("../stub-api.jar"))
 }
