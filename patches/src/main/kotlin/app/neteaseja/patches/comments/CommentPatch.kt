@@ -13,32 +13,42 @@ private const val EXTENSION_CLASS = "Lapp/neteaseja/extension/CommentTranslator;
  * these match by class name regardless of package. Each entry is tried in
  * order; missing ones are skipped.
  */
+private object CommentActivityOnCreate : Fingerprint(
+    definingClass = "/CommentActivity;",
+    name = "onCreate",
+    parameters = listOf("Landroid/os/Bundle;")
+)
+
+private object FoldCommentActivityOnCreate : Fingerprint(
+    definingClass = "/FoldCommentActivity;",
+    name = "onCreate",
+    parameters = listOf("Landroid/os/Bundle;")
+)
+
+private object ArtistIntroActivityOnCreate : Fingerprint(
+    definingClass = "/ArtistIntroActivity;",
+    name = "onCreate",
+    parameters = listOf("Landroid/os/Bundle;")
+)
+
+private object RcmdAlbumIntroActivityOnCreate : Fingerprint(
+    definingClass = "/RcmdAlbumIntroActivity;",
+    name = "onCreate",
+    parameters = listOf("Landroid/os/Bundle;")
+)
+
+private object RcmdPlaylistIntroActivityOnCreate : Fingerprint(
+    definingClass = "/RcmdPlaylistIntroActivity;",
+    name = "onCreate",
+    parameters = listOf("Landroid/os/Bundle;")
+)
+
 private val translatableScreenFingerprints = listOf(
-    object : Fingerprint(
-        definingClass = "/CommentActivity;",
-        name = "onCreate",
-        parameters = listOf("Landroid/os/Bundle;")
-    ),
-    object : Fingerprint(
-        definingClass = "/FoldCommentActivity;",
-        name = "onCreate",
-        parameters = listOf("Landroid/os/Bundle;")
-    ),
-    object : Fingerprint(
-        definingClass = "/ArtistIntroActivity;",
-        name = "onCreate",
-        parameters = listOf("Landroid/os/Bundle;")
-    ),
-    object : Fingerprint(
-        definingClass = "/RcmdAlbumIntroActivity;",
-        name = "onCreate",
-        parameters = listOf("Landroid/os/Bundle;")
-    ),
-    object : Fingerprint(
-        definingClass = "/RcmdPlaylistIntroActivity;",
-        name = "onCreate",
-        parameters = listOf("Landroid/os/Bundle;")
-    )
+    CommentActivityOnCreate,
+    FoldCommentActivityOnCreate,
+    ArtistIntroActivityOnCreate,
+    RcmdAlbumIntroActivityOnCreate,
+    RcmdPlaylistIntroActivityOnCreate
 )
 
 /**
