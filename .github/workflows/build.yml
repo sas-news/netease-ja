@@ -1,9 +1,8 @@
 name: build
 
 on:
+  # Manual verification builds. Releases are handled by release.yml on push.
   workflow_dispatch: {}
-  push:
-    branches: [main, dev]
 
 jobs:
   build:
