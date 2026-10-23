@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/sas-news/netease-ja/compare/v1.0.0...v1.0.1) (2026-10-23)
+
+### 🐛 Bug Fixes
+
+* create values-ja directory before writing strings overlay ([41754e1](https://github.com/sas-news/netease-ja/commit/41754e1dd6558a6e445219decaa88f51283a6826))
+
 ## 1.0.0 (2026-10-23)
 
 ### 🐛 Bug Fixes

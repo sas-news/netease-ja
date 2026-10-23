@@ -5,7 +5,7 @@
 ## パッチ
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0](https://github.com/sas-news/netease-ja/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.0.1](https://github.com/sas-news/netease-ja/releases/tag/v1.0.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
 <details open>
 <summary>📦 网易云音乐&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
