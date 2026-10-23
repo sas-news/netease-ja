@@ -32,6 +32,10 @@ val jaStringsPatch = resourcePatch(
 
         // Adding res/values-ja/strings.xml overlays the Japanese translations
         // on top of the default strings without touching any other locale.
-        get("res/values-ja/strings.xml", false).writeText(xml)
+        // The values-ja directory does not exist in the original APK,
+        // so create it first (get() only resolves the path).
+        val out = get("res/values-ja/strings.xml", false)
+        out.parentFile?.mkdirs()
+        out.writeText(xml)
     }
 }
