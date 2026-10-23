@@ -17,6 +17,13 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      - name: Check registry credentials
+        run: |
+          if [ -z "${{ secrets.REGISTRY_PAT }}" ]; then
+            echo "::error::REGISTRY_PAT secret is not set. Create a classic PAT with read:packages and add it at Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
       - name: Build patch bundle
         run: |
           chmod +x gradlew
